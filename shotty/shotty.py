@@ -73,7 +73,7 @@ def list_instances(project):
 def instances():
     """Commands for instances"""
 
-@instance.command('snapshot',
+@instances.command('snapshot',
     help="Create snapshots of all volumes")
 @click.option('--project', default=None,
     help="Only instances for project(tag Project:<name>)")
